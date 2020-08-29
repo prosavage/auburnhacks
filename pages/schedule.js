@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import CodeAnimation from '../components/home/hero/CodeAnimation';
 
 export default function Home() {
   return (
@@ -11,8 +10,11 @@ export default function Home() {
       </Head>
       <MainContainer>
         <SubContainer>
-          <BigFont>Auburn Hacks 2020</BigFont>
-          <CodeAnimation />
+          <BigFont>Schedule</BigFont>
+          <p>
+            AuburnHacks is currently planned for February 11th-12th in person.{' '}
+          </p>
+          <p>Coming soon...</p>
         </SubContainer>
       </MainContainer>
     </>
@@ -29,18 +31,14 @@ const SubContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px black solid;
+  border-radius: 25px;
+  overflow-wrap: break-word;
 `;
 const BigFont = styled.h3`
   font-weight: 600;
   font-size: 2em;
   line-height: 90px;
-`;
-const HeroImage = styled.img`
-  height: auto;
-  width: 100%;
-  max-width: 750px;
-
-  @media (max-width: 700px) {
-    display: none;
-  }
 `;
