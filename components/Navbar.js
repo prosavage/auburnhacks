@@ -1,40 +1,40 @@
-import styled, { css } from "styled-components";
-import Link from "next/link";
-import A from "./ui/A";
+import styled, { css } from 'styled-components';
+import Link from 'next/link';
+import A from './ui/A';
 
 export default function Navbar(props) {
   return (
     <Wrapper>
-      <Link href="/">
+      <Link href='/'>
         <Logo>AuburnHacks</Logo>
       </Link>
       <LinkContainer>
         <NavItem>
-          <Link href="/">
-            <A color={"black"}>Home</A>
+          <Link href='/'>
+            <A color={'black'}>Home</A>
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="/">
-            <A color={"black"}>Schedule</A>
+          <Link href='/schedule'>
+            <A color={'black'}>Schedule</A>
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="/">
-            <A color={"black"}>About</A>
+          <Link href='/about'>
+            <A color={'black'}>About</A>
           </Link>
         </NavItem>
       </LinkContainer>
 
       <LinkContainer>
         <NavItem>
-          <Link href="/auth/signup">
-            <A color={"black"}>Sign up</A>
+          <Link href='/auth/signup'>
+            <A color={'black'}>Sign up</A>
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="/auth/signin">
-            <A color={"black"}>Sign in</A>
+          <Link href='/auth/signin'>
+            <A color={'black'}>Sign in</A>
           </Link>
         </NavItem>
       </LinkContainer>
