@@ -89,7 +89,6 @@ export default function SignIn(props) {
 const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 1.5em 2.5em;
   /* box-shadow: 0px 10px 35px rgba(52, 52, 52, 0.13); */
   min-width: 350px;
 `;

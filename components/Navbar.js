@@ -5,12 +5,7 @@ import A from "./ui/A";
 export default function Navbar(props) {
   return (
     <Wrapper>
-      <Link href="/">
-        <NavItem>
-          <Logo>Auburn Hacks</Logo>
-        </NavItem>
-      </Link>
-
+      <Logo>AuburnHacks</Logo>
       <LinkContainer>
         <NavItem>
           <Link href="/">
@@ -52,17 +47,30 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100vw;
   padding: 1em 0;
+
+  @media(max-width: 700px) {
+      flex-direction: column;
+      
+  }
 `;
 
 const Logo = styled.h1`
   font-weight: bold;
   font-size: 25px;
   line-height: 60px;
+    padding-left: 20px;
+
+    
 `;
 
 const NavItem = styled.div`
   padding: 0 20px;
   cursor: pointer;
+
+  @media(max-width: 700px) {
+      padding: .3em 0;
+      
+  }
 `;
 
 const LinkContainer = styled.div`

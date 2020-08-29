@@ -37,9 +37,13 @@ export default function CodeAnimation(props) {
 }
 
 const Code = styled.h2`
-font-size: 50px;
+font-size: 2rem;
   font-family: "Roboto Mono", monospace;
   color: white;
+
+  @media(max-width: 700px) {
+      font-size: 1.5rem;
+  }
 `;
 
 const CodeContainer = styled.div`

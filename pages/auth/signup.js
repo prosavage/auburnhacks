@@ -21,7 +21,7 @@ export default function SignUp(props) {
         <img src="/img/logo.png" />
       </Row>
       <Row center>
-        <h1>Welcome to Auburn Hacks</h1>
+        <h2>Welcome to Auburn Hacks</h2>
         <p>{status}</p>
       </Row>
       <FormContainer>
@@ -103,7 +103,6 @@ export default function SignUp(props) {
 const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 1.5em 2.5em;
   /* box-shadow: 0px 10px 35px rgba(52, 52, 52, 0.13); */
   border-radius: 8px;
   min-width: 350px;
