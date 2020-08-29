@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 export default function Input(props) {
   return (
     <Container>
@@ -21,18 +21,15 @@ const Container = styled.div`
 
 const StyledInput = styled.input`
   background: #f9f9f9;
-  border: 2px solid #03244D;
+  border: 2px solid #03244d;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 10px;
   transition: 1s;
-
+  outline: black;
   &:focus,
   &:hover {
-    outline: none;
     transition: 1s;
-    border: 2px solid #DD550C;
-    outline: none;
-    box-shadow: 0px 10px 35px rgba(52, 52, 52, .5);
+    box-shadow: 0px 10px 35px rgba(52, 52, 52, 0.5);
   }
 `;
