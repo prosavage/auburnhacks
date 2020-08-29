@@ -18,6 +18,10 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           <>
+            <link
+              rel='stylesheet'
+              href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css'
+            />
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
