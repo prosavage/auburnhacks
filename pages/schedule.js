@@ -23,16 +23,18 @@ export default function Home() {
 
 const MainContainer = styled.div`
   display: flex;
+  flex: 1 1 0;
   padding: 1em 0;
   padding-top: 4em;
   flex-wrap: wrap;
 `;
 const SubContainer = styled.div`
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  margin: 2vw;
-  padding: 2vw;
+  margin: 2rem;
+  padding: 2rem;
   border: 1px black solid;
   border-radius: 25px;
   overflow-wrap: break-word;

@@ -68,7 +68,7 @@ const NavItem = styled.div`
   cursor: pointer;
 
   @media (max-width: 700px) {
-    padding: 0.3em 0;
+    padding: 0.3rem 0.3rem;
   }
 `;
 

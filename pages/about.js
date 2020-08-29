@@ -62,15 +62,15 @@ const SubContainer = styled.div`
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  margin: 2vw;
-  padding: 2vw;
+  margin: 2rem;
+  padding: 2rem;
   border: 1px black solid;
   border-radius: 25px;
   overflow-wrap: break-word;
 `;
 const WordContainer = styled.div`
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
+
 `;
 const BigFont = styled.h3`
   font-weight: 600;
@@ -78,6 +78,7 @@ const BigFont = styled.h3`
   line-height: 90px;
 `;
 const MapContainer = styled.div`
-  height: 400px;
-  width: 400px;
+  height: 70vh;
+  width: 100%;
+  padding: 2rem;
 `;
