@@ -4,8 +4,6 @@ import {
   TileLayer,
   Marker,
   Popup,
-  MapControl,
-  withLeaflet,
 } from 'react-leaflet';
 
 export default class MyMap extends Component {
@@ -56,8 +54,7 @@ export default class MyMap extends Component {
           center={position}
           zoom={this.state.zoom}
           style={{
-            height: '100%',
-            width: '100%',
+            height:"100%"
           }}>
           <TileLayer
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -75,12 +72,11 @@ export default class MyMap extends Component {
         <style jsx>
           {`
             .map-root {
-              height: 100%;
+              height: 80%;
             }
             .leaflet-container {
-              height: 100%;
-              width: 100%;
-              margin: 0 auto;
+              height: 400px;
+              width: 80%;
             }
           `}
         </style>

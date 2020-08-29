@@ -5,9 +5,9 @@ export default function CodeAnimation(props) {
   const [index, setIndex] = useState(0);
   const [finished, setFinished] = useState(false);  
 
-  const code = `AUHacks hacks = new AUHacks(2020);\n
+  const code = `AUHacks hacks = new AUHacks(2021);\n
     hacks.init();\n`;
-  const result = <p i={3}>{`>>> Welcome to Auburn Hacks 2020\n`}</p>
+  const result = <p i={3}>{`>>> Welcome to Auburn Hacks 2021\n`}</p>
 
   const getCode = (done) => {
     if (done) {

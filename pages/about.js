@@ -15,23 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainContainer>
-        <SubContainer>
-          <BigFont>When</BigFont>
-          <WordContainer>
-            <p>
-              AuburnHacks is currently planned for February 11th-12th in person.
-              These dates are subject to change due to COVID-19
-            </p>
-          </WordContainer>
-        </SubContainer>
-        <SubContainer>
-          <BigFont>Where</BigFont>
-          <p>Auburn University</p>
-          <MapContainer>
-            <MapWithNoSSR />
-          </MapContainer>
-        </SubContainer>
-        <SubContainer>
+      <SubContainer>
           <BigFont>What</BigFont>
           <WordContainer>
             <p>
@@ -45,6 +29,24 @@ export default function Home() {
             </p>
           </WordContainer>
         </SubContainer>
+        <SubContainer>
+          <BigFont>When</BigFont>
+          <WordContainer>
+          <p>
+          AuburnHacks is currently planned for February 11th-12th in person.
+          These dates are subject to change due to COVID-19</p>
+          </WordContainer>
+        </SubContainer>
+        <SubContainer>
+          <BigFont>Where</BigFont>
+          <p>Auburn University Brown-Kopel</p>
+
+          <MapContainer>
+            <MapWithNoSSR />
+          </MapContainer>
+
+        </SubContainer>
+       
       </MainContainer>
     </>
   );
@@ -52,7 +54,10 @@ export default function Home() {
 
 const MainContainer = styled.div`
   display: flex;
-  flex: 1 1 0;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
   padding: 1em 0;
   padding-top: 4em;
   flex-wrap: wrap;
@@ -62,15 +67,15 @@ const SubContainer = styled.div`
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  margin: 2vw;
-  padding: 2vw;
-  border: 1px black solid;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0px 10px 35px rgba(52, 52, 52, 0.25);
   border-radius: 25px;
-  overflow-wrap: break-word;
+  
 `;
 const WordContainer = styled.div`
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
+  padding: 1rem;
 `;
 const BigFont = styled.h3`
   font-weight: 600;
@@ -78,6 +83,6 @@ const BigFont = styled.h3`
   line-height: 90px;
 `;
 const MapContainer = styled.div`
-  height: 400px;
-  width: 400px;
+  height: 70vh;
+  width: 100%;
 `;

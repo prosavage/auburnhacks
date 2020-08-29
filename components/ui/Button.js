@@ -5,11 +5,12 @@ export default function Button(props) {
     <Container>
       <StyledButton
         secondary={props.secondary}
+        tertiary={props.tertiary}
         background={props.background}
         color={props.color}
         type={props.type}
         onClick={props.onClick}
-      >
+      > 
         {props.children}
       </StyledButton>
     </Container>
@@ -22,7 +23,6 @@ const StyledButton = styled.button`
   text-align: center;
   text-transform: uppercase;
   background: #fbfbfb;
-  border: 2px solid black;
   box-sizing: border-box;
   border-radius: 8px;
   color: black;
@@ -32,7 +32,7 @@ const StyledButton = styled.button`
   transition: all 0.5s ease-in-out;
   background: ${(props) => props.background};
   color: ${(props) => props.color};
-  border: 2px solid ${props => props.color};
+  border: none;
   &:hover,
   &:focus {
     outline: none;
@@ -48,6 +48,21 @@ const StyledButton = styled.button`
     css`
       color: white;
       background: #03244d;
+    `}
+    
+  ${(props) =>
+    props.tertiary &&
+    css`
+      border-radius: 15px;
+      font-size: 30px;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      color: white;
+      background: #F68026;
+      &:hover,
+      &:focus {
+        box-shadow: 0px 10px 35px rgba(3, 36, 77, 0.40);
+      }
     `}
 `;
 const Container = styled.div`
