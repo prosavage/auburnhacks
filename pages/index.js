@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <p>yeah</p>
+        <p>"Albert is really cool" - Naman</p>
       </main>
     </>
   );
