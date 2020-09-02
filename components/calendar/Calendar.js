@@ -66,7 +66,7 @@ const Wrapper = styled.div`
   justify-content: center;
   padding: 0.3rem;
   border: 2px solid #eaeaea;
-  min-width: 700px;
+  min-width: 80%;
 `;
 
 function CalendarHeader(props) {

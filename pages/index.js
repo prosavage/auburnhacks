@@ -6,16 +6,13 @@ import Link from "next/link";
 import Button from "../components/ui/Button";
 import Calendar from "../components/calendar/Calendar";
 import Footer from "../components/ui/Footer";
-import {useState} from "react";
+import { useState } from "react";
 // server side rendering misses up the map :(
 const MapWithNoSSR = dynamic(() => import("../components/map/map"), {
   ssr: false,
 });
 
 export default function Home() {
-
-
-
   return (
     <>
       <Head>
@@ -24,8 +21,11 @@ export default function Home() {
       </Head>
       <MainContainer>
         <SubContainer>
-          <BigFont>Auburn Hacks 2021</BigFont>
-          <CodeAnimation  />
+          <NWordFont>
+            <OrangeSpan>Auburn</OrangeSpan><BlueSpan>Hacks</BlueSpan>
+          </NWordFont>
+          
+          <CodeAnimation />
         </SubContainer>
         <SubContainer>
           <ButtonContainer>
@@ -55,10 +55,18 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 1em 0;
-  padding-top: 4em;
+  padding-top: 1em;
   flex-wrap: wrap;
   width: 100%;
 `;
+
+const OrangeSpan = styled.span`
+  color: #DD550C;
+`;
+const BlueSpan = styled.span`
+  color: #03244D;
+`;
+
 const SubContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -80,17 +88,27 @@ const MapContainer = styled.div`
 `;
 const ButtonContainer = styled.div`
   display: flex;
-  padding-top: 4em;
 `;
 const BigFont = styled.h3`
   font-weight: 600;
   font-size: 2em;
   line-height: 90px;
-
   @media (max-width: 700px) {
     font-size: 1.5em;
   }
 `;
+const NWordFont = styled.h3`
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-family: Electrolize;
+
+  padding: 1em 0;
+  @media (max-width: 700px) {
+    font-size: 2.5em;
+  }
+`;
+
 const HeroImage = styled.img`
   height: auto;
   width: 100%;
