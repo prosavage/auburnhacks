@@ -8,7 +8,7 @@ export default function Calendar(props) {
       items: [
         {
           time: "all-day",
-          activity: "doin your mom",
+          activity: "eating waffles",
         },
       ],
     },
@@ -18,16 +18,16 @@ export default function Calendar(props) {
       items: [
         {
           time: "all-day",
-          activity: "doin your mom again",
+          activity: "eating waffles",
         },
         {
           time: "all-day",
-          activity: "doin your mom again again",
+          activity: "eating waffles",
         },
         ,
         {
           time: "all-day",
-          activity: "doin your mom again again again",
+          activity: "eating waffles",
         },
       ],
     },
@@ -37,11 +37,11 @@ export default function Calendar(props) {
       items: [
         {
           time: "all-day",
-          activity: "doin your mom",
+          activity: "eating waffles",
         },
         {
           time: "all-day",
-          activity: "doin your mom",
+          activity: "eating waffles",
         },
       ],
     }, 

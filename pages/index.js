@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import Button from "../components/ui/Button";
 import Calendar from "../components/calendar/Calendar";
-import Footer from "../components/ui/Footer";
 import { useState } from "react";
 // server side rendering misses up the map :(
 const MapWithNoSSR = dynamic(() => import("../components/map/map"), {
@@ -38,14 +37,13 @@ export default function Home() {
           <BigFont id="schedule">Schedule</BigFont>
           <Calendar />
         </SubContainer>
-        <SubContainer id="map">
+        {/* <SubContainer id="map">
           <BigFont>Auburn University, Brown Kopel</BigFont>
-        </SubContainer>
+        </SubContainer> */}
         <MapContainer>
           <MapWithNoSSR />
         </MapContainer>
       </MainContainer>
-      <Footer />
     </>
   );
 }
